@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, h1, h2, p, label, select, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: rgb(24, 17, 13);
+}
+
+body{
+    /* Adding Background Image to the website*/
+    background-image: url("../img/BackgroundImage.jpg");
+    background-size: contain;
+}
+
+#student-info{
+    font-size: x-large;
+    padding-top: 1em;
+    color: rgb(0, 0, 0);
+}
+
+#pizzaForm{
+    padding: 2em;
+}
+
+.container {
+    background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"], input[type="radio"], input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#orderOutput {
+    margin-top: 20px;
+}
+
+#orderOutput, #orderDescription , #orderTotal{
+    color: white;
+}

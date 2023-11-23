@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pizza Order Form</h1>
+        <p id="student-info"></p>
+
+        <form id="pizzaForm">
+            <!-- Pizza size -->
+            <label for="pizzaSize">Select Pizza Size:</label>
+            <select id="pizzaSize" name="pizzaSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <!-- Crust options -->
+            <label>Choose Crust:</label>
+            <input type="radio" name="crust" value="thin"> Thin
+            <input type="radio" name="crust" value="thick"> Thick
+
+            <!-- Toppings -->
+            <label for="toppings">Choose Toppings</label>
+            <input type="text" id="toppings" name="toppings">
+
+            <!-- Extra toppings -->
+            <label>Choose Extra Toppings:</label>
+            <input type="checkbox" name="extraToppings" value="extraCheese"> Extra Cheese
+            <input type="checkbox" name="extraToppings" value="pepperoni"> Pepperoni
+            <input type="checkbox" name="extraToppings" value="mushrooms"> Mushrooms
+
+            <!-- Customer information -->
+            <label for="customerName">Your Name:</label>
+            <input type="text" id="customerName" name="customerName">
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address">
+
+            <button type="button" onclick="submitOrder()">Order Now</button>
+        </form>
+
+        <!-- Order summary area -->
+        <div id="orderOutput">
+            <h2>Order Summary</h2>
+            <p id="orderDescription"></p>
+            <p id="orderTotal"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
